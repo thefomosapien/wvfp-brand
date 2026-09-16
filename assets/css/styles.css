@@ -264,6 +264,20 @@ a:focus-visible, button:focus-visible {
 .bg-swatch span { font-size: .72rem; font-weight: 900; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-soft); }
 .bg-swatch--dark span { color: rgba(255,247,232,.85); }
 
+/* two versions of the badge */
+.badge-versions { margin-bottom: clamp(3rem, 6vw, 4.5rem); }
+.badge-versions__grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(1rem, 2.5vw, 1.8rem); margin-bottom: 1.2rem; }
+.badge-version { margin: 0; background: #fff; border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow-sm); display: flex; flex-direction: column; }
+.badge-version__stage { background: var(--cream); display: grid; place-items: center; padding: clamp(1.6rem, 4vw, 2.6rem); }
+.badge-version__stage img { width: min(180px, 55%); }
+.badge-version figcaption { padding: 1.2rem 1.4rem 1.5rem; border-top: 1px solid var(--line); }
+.badge-version figcaption p { margin: 0; color: var(--ink-soft); font-size: .94rem; }
+.badge-version figcaption strong { color: var(--ink); }
+.badge-version__tag {
+  display: inline-block; font-family: var(--f-display); font-weight: 700; font-size: 1.05rem; color: var(--red);
+  margin-bottom: .5rem;
+}
+
 /* secondary marks */
 .section-subhead { max-width: 640px; margin-bottom: 2rem; }
 .section-subhead h3 { font-size: clamp(1.5rem, 3vw, 2rem); margin-bottom: .7rem; }
@@ -437,18 +451,25 @@ a:focus-visible, button:focus-visible {
 .file-help__note em { font-style: normal; font-weight: 700; color: var(--ink); }
 
 /* Logo cards */
-.logo-lib { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.4rem; margin-bottom: clamp(2rem, 4vw, 3rem); }
+.logo-lib { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.4rem; margin-bottom: clamp(2rem, 4vw, 3rem); }
 .logo-lib__card {
   background: #fff; border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden;
   box-shadow: var(--shadow-sm); display: flex; flex-direction: column;
 }
-.logo-lib__preview { display: grid; grid-template-columns: 1fr 1fr; height: 170px; }
+.logo-lib__preview { display: grid; grid-template-columns: 1fr 1fr; height: 180px; }
+.logo-lib__preview--single { grid-template-columns: 1fr; }
 .logo-lib__swatch { display: grid; place-items: center; padding: 1.2rem; }
-.logo-lib__swatch img { max-width: 84%; max-height: 96px; width: auto; }
+.logo-lib__swatch img { max-width: 78%; max-height: 110px; width: auto; }
 .logo-lib__swatch--dark { box-shadow: inset 1px 0 0 rgba(0,0,0,.08); }
-.logo-lib__body { padding: 1.4rem 1.4rem 1.5rem; display: flex; flex-direction: column; gap: .7rem; flex: 1; }
+.logo-lib__body { padding: 1.4rem 1.5rem 1.6rem; display: flex; flex-direction: column; gap: .55rem; flex: 1; }
 .logo-lib__body h3 { font-size: 1.4rem; }
-.logo-lib__use { color: var(--ink-soft); margin: 0; font-size: .94rem; }
+.logo-lib__use { color: var(--ink-soft); margin: .2rem 0 .5rem; font-size: .94rem; }
+.badge-flag {
+  align-self: flex-start; display: inline-block; margin: 0; font-weight: 900; text-transform: uppercase;
+  letter-spacing: .06em; font-size: .68rem; padding: .3rem .7rem; border-radius: 999px;
+  background: var(--gold); color: var(--deep-red);
+}
+.badge-flag--alt { background: rgba(74,52,38,.1); color: var(--brown); }
 .dl-groups { display: grid; gap: .9rem; margin-top: .2rem; }
 .dl-group__label { display: block; font-weight: 900; font-size: .74rem; text-transform: uppercase; letter-spacing: .07em; color: var(--brown); margin-bottom: .45rem; }
 .dl-group__label em { font-style: normal; font-weight: 700; text-transform: none; letter-spacing: 0; color: var(--ink-soft); }
@@ -537,6 +558,7 @@ a:focus-visible, button:focus-visible {
   .pillars { grid-template-columns: 1fr; }
   .bg-swatches { grid-template-columns: repeat(2, 1fr); }
   .secondary-grid { grid-template-columns: 1fr; }
+  .badge-versions__grid { grid-template-columns: 1fr; }
   .palette { grid-template-columns: repeat(2, 1fr); }
   .signal__chips { flex-direction: column; }
   .signal__plus { display: none; }
