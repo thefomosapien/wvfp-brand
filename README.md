@@ -1,6 +1,6 @@
-# West Valley Fastpitch — Brand Guide Website
+# West Valley Fast Pitch — Brand Guide Website
 
-The official digital home of the **West Valley Fastpitch** visual identity — a
+The official digital home of the **West Valley Fast Pitch** visual identity — a
 polished, responsive one-page brand site that serves as the source of truth for
 the league's logos, colors, typography, photography, voice, and downloadable
 assets.
@@ -10,6 +10,18 @@ assets.
 It is the digital extension of the **WVFP Rebrand Guide**, built for board
 members, coaches, vendors, printers, sponsors, and partners who need approved
 brand assets.
+
+## Naming (writing the league's name)
+
+Keep prose consistent — the site's Voice section documents this in full:
+
+- **West Valley Fast Pitch, Inc.** — legal name (contracts, filings, banking, insurance, tax).
+- **West Valley Fast Pitch** — standard written name; use in all normal prose and copy, with "Fast Pitch" as **two words**.
+- **WEST VALLEY FASTPITCH** / **FASTPITCH** — one-word branded display treatment only (logos, wordmarks, merch, signage, headlines). It never replaces the written name.
+- **WVFP** — approved abbreviation once the league is identified or context is clear.
+
+Avoid sentence-case "West Valley Fastpitch" in running text — it reads like an
+alternate spelling rather than a purposeful brand treatment.
 
 ## Sections
 

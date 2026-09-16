@@ -396,6 +396,42 @@ a:focus-visible, button:focus-visible {
 .phrases li::before { content: "“"; font-family: var(--f-editorial); color: var(--gold); font-size: 1.6em; line-height: 0; position: relative; top: .2em; }
 .phrases li:last-child { border-bottom: 0; }
 
+/* naming guideline (lives in the red Voice section) */
+.naming { margin-top: clamp(2.6rem, 5vw, 4rem); padding-top: clamp(2.2rem, 4vw, 3rem); border-top: 1px solid rgba(255,247,232,.22); }
+.naming__head { max-width: 70ch; margin-bottom: 1.8rem; }
+.eyebrow--onred { color: var(--gold); }
+.naming__head h3 { color: var(--cream); font-size: clamp(1.5rem, 3vw, 2rem); margin-bottom: .9rem; }
+.naming__intro { color: rgba(255,247,232,.9); margin: 0; font-size: 1.02rem; }
+.naming__intro strong { color: var(--cream); }
+.naming__intro em { color: var(--gold); font-style: italic; }
+
+.naming__tiers { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; margin-bottom: 1.6rem; }
+.name-tier {
+  background: rgba(255,247,232,.10); border: 1px solid rgba(255,247,232,.24); border-radius: var(--radius);
+  padding: 1.2rem 1.2rem 1.3rem; display: flex; flex-direction: column; gap: .5rem;
+}
+.name-tier__form { font-weight: 900; color: var(--cream); font-size: 1rem; line-height: 1.2; }
+.name-tier__form--display { font-family: var(--f-display); font-weight: 900; letter-spacing: .01em; color: var(--gold); }
+.name-tier__label { font-weight: 900; text-transform: uppercase; letter-spacing: .1em; font-size: .66rem; color: var(--gold); }
+.name-tier p { margin: 0; font-size: .88rem; color: rgba(255,247,232,.82); }
+
+.naming__examples { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+.naming__col { background: var(--cream); border-radius: var(--radius); padding: 1.4rem 1.6rem 1.5rem; }
+.naming__col h4 { display: flex; align-items: center; gap: .55rem; font-size: 1.2rem; margin-bottom: 1rem; }
+.naming__col .mark { font-family: var(--f-body); font-weight: 900; }
+.naming__col--do h4, .naming__col--do .mark { color: var(--teal); }
+.naming__col--avoid h4, .naming__col--avoid .mark { color: var(--red); }
+.naming__col ul { display: grid; gap: .6rem; }
+.naming__col li { color: var(--ink); font-size: .95rem; line-height: 1.4; }
+.naming__col--do li { padding-left: 1rem; position: relative; }
+.naming__col--do li::before { content: "—"; position: absolute; left: 0; color: var(--ink-soft); }
+.naming__col--avoid li { padding-left: 1rem; position: relative; color: var(--ink-soft); text-decoration: line-through; text-decoration-color: rgba(182,24,22,.5); }
+.naming__col--avoid li::before { content: "—"; position: absolute; left: 0; color: var(--ink-soft); text-decoration: none; }
+.naming__col li em { font-style: italic; color: var(--ink-soft); }
+.naming__col li .name-tier__form { color: var(--ink); font-size: .95rem; }
+.ex-display { font-family: var(--f-display); font-weight: 900; color: var(--red); letter-spacing: .02em; }
+.naming__why { margin: 1rem 0 0; padding-top: .9rem; border-top: 1px dashed var(--line); font-size: .84rem; color: var(--ink-soft); font-style: italic; }
+
 /* ============================================================
    APPLICATIONS
    ============================================================ */
@@ -537,6 +573,7 @@ a:focus-visible, button:focus-visible {
   .app-card--feature { grid-column: span 2; grid-row: auto; aspect-ratio: 16/9; }
   .app-domains, .color-notes { grid-template-columns: repeat(2, 1fr); }
   .logo-lib { grid-template-columns: 1fr; max-width: 640px; }
+  .naming__tiers { grid-template-columns: repeat(2, 1fr); }
   .hero__inner { grid-template-columns: 1fr; gap: 1.6rem; }
   .hero__mark { order: -1; justify-items: start; }
   .hero__mark img { width: min(200px, 46%); }
@@ -570,6 +607,8 @@ a:focus-visible, button:focus-visible {
   .photo-grid__item--wide { grid-column: span 2; }
   .photo-grid__item--tall { grid-row: auto; }
   .phrases { grid-template-columns: 1fr; }
+  .naming__tiers { grid-template-columns: 1fr; }
+  .naming__examples { grid-template-columns: 1fr; }
   .file-help__grid { grid-template-columns: 1fr; }
   .color-notes, .app-domains { grid-template-columns: 1fr; }
   .footer-inner { grid-template-columns: 1fr; gap: 1.8rem; }
