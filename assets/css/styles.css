@@ -109,12 +109,14 @@ a:focus-visible, button:focus-visible {
   background: var(--gold); transform: scaleX(0); transform-origin: left; transition: transform .25s ease;
 }
 .primary-nav a:hover::after, .primary-nav a.is-active::after { transform: scaleX(1); }
-.primary-nav a.is-active { color: var(--gold); }
+.primary-nav a.is-active:not(.nav-cta) { color: var(--gold); }
 .primary-nav .nav-cta {
   background: var(--gold); color: var(--deep-red); margin-left: .4rem;
 }
 .primary-nav .nav-cta::after { display: none; }
 .primary-nav .nav-cta:hover { background: #ffd34d; }
+/* keep the CTA legible when it's the active section; show an active ring instead of the underline */
+.primary-nav .nav-cta.is-active { color: var(--deep-red); box-shadow: inset 0 0 0 2px var(--deep-red); }
 
 .nav-toggle {
   display: none; flex-direction: column; gap: 5px; width: 44px; height: 44px;
