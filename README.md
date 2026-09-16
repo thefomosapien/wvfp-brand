@@ -39,11 +39,39 @@ index.html                     # all page content
 assets/
   css/styles.css               # design system + layout
   js/main.js                   # nav, scrollspy, copy-to-clipboard, reveals
-  img/logos/                   # web-optimized transparent PNG marks
+  img/logos/                   # web-optimized display PNGs used on the page
   img/photos/                  # documentary + application photography
-  img/favicon-*.png, og-image.jpg
-  downloads/                   # full-resolution logo files for download
+  img/favicon.svg, favicon-*.png, og-image.jpg
+  brand-logos/                 # the official, downloadable logo files
+    primary-badge/             # circle badge — color, white, + no-date
+    arched-wordmark/           # arched varsity wordmark — color & white
+    pill-lockup/               # horizontal pill lockup — color & white
+    wvfp-all-logos-master.*    # Illustrator master (AI/EPS/PDF/SVG)
+    wvfp-logo-pack.zip         # everything, zipped, for "download all"
 ```
+
+### Logo file naming
+
+Each mark is provided in every format, with a consistent name:
+
+```
+wvfp-badge-color.svg  .pdf  .ai  .eps  .png     # full color
+wvfp-badge-white.svg  .pdf  .ai  .eps  .png     # white / reversed (for dark)
+wvfp-badge-color-nodate.*                       # circle without EST. 1974
+```
+
+- **PNG** — everyday use (docs, slides, web, email)
+- **SVG** — sharpest at any size (web, large signage)
+- **PDF** — hand to a printer
+- **AI / EPS** — editable source files for designers
+
+Use **full-color** on light/cream backgrounds and **white** on red, brown,
+dark, or photo backgrounds.
+
+The raw export files the league provided were reviewed and consolidated into
+the structure above: exact duplicates and non-useful exports (e.g. white logos
+baked onto a solid black box) were removed, and everything else was renamed and
+grouped by mark.
 
 ## Brand tokens
 
@@ -60,18 +88,15 @@ assets/
 **Type:** Roboto Slab (display) · EB Garamond (editorial) · Lato (utility),
 all loaded from Google Fonts.
 
-## Adding the official production files
+## Official logo files
 
-The logo images shipped here are the marks from the rebrand guide, exported as
-high-resolution transparent PNGs. Before wide rollout, drop the true vector
-masters and export variants into `assets/downloads/` and wire the buttons in the
-**Assets** section:
+The official logo files live in `assets/brand-logos/` and are wired into the
+**Assets** section for download (per-mark, or the full `wvfp-logo-pack.zip`). To
+add or update a mark, replace the matching files in its folder — keep the names
+the same and the download buttons keep working.
 
-- [ ] Vector masters: `AI`, `SVG`, `EPS`, `PDF`
-- [ ] Logo variants: full-color, one-color, reversed, black, white
+Still nice to have later:
+
 - [ ] Confirm exact hex / CMYK / Pantone from the vector source
 - [ ] Template files: field banner, social graphics, flyer, sponsorship packet
-- [ ] Link the shared photo library for coaches and media
-
-Placeholders and notes are already marked in the UI so nothing ships as a fake
-final asset.
+- [ ] Link a shared photo library for coaches and media
