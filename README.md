@@ -43,21 +43,22 @@ assets/
   img/photos/                  # documentary + application photography
   img/favicon.svg, favicon-*.png, og-image.jpg
   brand-logos/                 # the official, downloadable logo files
-    primary-badge/             # circle badge — color, white, + no-date
+    primary-badge/             # circle badge — color & white, with/without date
     arched-wordmark/           # arched varsity wordmark — color & white
     pill-lockup/               # horizontal pill lockup — color & white
-    wvfp-all-logos-master.*    # Illustrator master (AI/EPS/PDF/SVG)
     wvfp-logo-pack.zip         # everything, zipped, for "download all"
 ```
 
 ### Logo file naming
 
-Each mark is provided in every format, with a consistent name:
+Each mark is provided in every format, with a consistent name. The circle
+badge additionally comes with and without the EST. 1974 date:
 
 ```
-wvfp-badge-color.svg  .pdf  .ai  .eps  .png     # full color
-wvfp-badge-white.svg  .pdf  .ai  .eps  .png     # white / reversed (for dark)
-wvfp-badge-color-nodate.*                       # circle without EST. 1974
+wvfp-badge-color.svg .pdf .ai .eps .png          # color, with EST. 1974
+wvfp-badge-color-nodate.*                         # color, no date
+wvfp-badge-white.*                                # white/reversed, with EST. 1974
+wvfp-badge-white-nodate.*                         # white/reversed, no date
 ```
 
 - **PNG** — everyday use (docs, slides, web, email)
