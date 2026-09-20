@@ -13,6 +13,11 @@
   --brown:       #4A3426;
   --teal:        #2E6B6A;
 
+  /* Spirit palette */
+  --rose:        #C76578;
+  --violet:      #72577F;
+  --powder:      #82AFC1;
+
   /* Working tokens */
   --ink:         #3A2A1E;   /* warm near-black for body text on cream */
   --ink-soft:    #6b5847;
@@ -328,10 +333,11 @@ a:focus-visible, button:focus-visible {
 .swatch__hex { font-size: .82rem; color: var(--ink-soft); font-weight: 700; letter-spacing: .06em; padding: 0 1rem 1rem; font-variant-numeric: tabular-nums; }
 .swatch__hex::after { content: " ⧉"; opacity: .5; font-size: .78rem; }
 
-.color-notes { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.4rem; margin-top: 2.6rem; }
+.color-notes { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.4rem; margin-top: 2.6rem; }
 .color-note { border-top: 3px solid var(--gold); padding-top: 1rem; }
 .color-note:nth-child(2) { border-top-color: var(--cream); }
 .color-note:nth-child(3) { border-top-color: var(--teal); }
+.color-note:nth-child(4) { border-top-color: var(--rose); }
 .color-note h4 { color: var(--cream); font-size: 1.15rem; margin-bottom: .5rem; }
 .color-note p { color: rgba(243,230,210,.85); margin: 0; font-size: .96rem; }
 

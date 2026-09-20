@@ -94,15 +94,18 @@ grouped by mark.
 
 ## Brand tokens
 
-| Color          | Hex       | Role                 |
-| -------------- | --------- | -------------------- |
-| Softball Gold  | `#F3C12C` | Accent               |
-| Primary Red    | `#B61816` | Primary signal       |
-| Deep Red       | `#821415` | Secondary accent     |
-| Primary Cream  | `#FFF7E8` | Default background    |
-| Heritage Cream | `#E3D2AE` | Warm/nostalgic bg     |
-| Dark Brown     | `#4A3426` | Secondary accent/text |
-| Dusty Teal     | `#2E6B6A` | Secondary accent     |
+| Color          | Hex       | Tier / Role                |
+| -------------- | --------- | -------------------------- |
+| Softball Gold  | `#F3C12C` | Core identity — accent     |
+| Primary Red    | `#B61816` | Core identity — primary    |
+| Primary Cream  | `#FFF7E8` | Core identity — default bg |
+| Heritage Cream | `#E3D2AE` | Core identity — warm bg     |
+| Deep Red       | `#821415` | Supporting palette         |
+| Dark Brown     | `#4A3426` | Supporting palette / text  |
+| Dusty Teal     | `#2E6B6A` | Supporting palette         |
+| Dusty Rose     | `#C76578` | Spirit palette             |
+| Vintage Violet | `#72577F` | Spirit palette             |
+| Powder Blue    | `#82AFC1` | Spirit palette             |
 
 **Type:** Roboto Slab (display) · EB Garamond (editorial) · Lato (utility),
 all loaded from Google Fonts.
