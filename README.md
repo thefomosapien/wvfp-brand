@@ -53,33 +53,39 @@ assets/
   js/main.js                   # nav, scrollspy, copy-to-clipboard, reveals
   img/logos/                   # web-optimized display PNGs used on the page
   img/photos/                  # documentary + application photography
-  img/favicon.svg, favicon-*.png, og-image.jpg
+  img/favicon.svg, favicon-*.png, og-image.png
   brand-logos/                 # the official, downloadable logo files
-    primary-badge/             # circle badge — color & white, with/without date
-    arched-wordmark/           # arched varsity wordmark — color & white
-    pill-lockup/               # horizontal pill lockup — color & white
+    primary-badge/             # circle badge — CORE (no date) + 1974 (dated)
+    arched-wordmark/           # arched varsity wordmark
+    pill-lockup/               # horizontal pill lockup
     wvfp-logo-pack.zip         # everything, zipped, for "download all"
 ```
 
 ### Logo file naming
 
-Each mark is provided in every format, with a consistent name. The circle
-badge additionally comes with and without the EST. 1974 date:
+There are four marks — **core** (circle badge, no date), **1974** (circle
+badge with the date), **word** (arched wordmark), and **pill** (pill lockup).
+Each comes in three color treatments (color / black / white) and five formats
+(AI · EPS · JPG · PNG · SVG):
 
 ```
-wvfp-badge-color.svg .pdf .ai .eps .png          # color, with EST. 1974
-wvfp-badge-color-nodate.*                         # color, no date
-wvfp-badge-white.*                                # white/reversed, with EST. 1974
-wvfp-badge-white-nodate.*                         # white/reversed, no date
+primary-badge/wvfp-core-color.{ai,eps,jpg,png,svg}    # no date, full color
+primary-badge/wvfp-core-black.*                         # no date, one-color black
+primary-badge/wvfp-core-white.*                         # no date, white / reversed
+primary-badge/wvfp-1974-color.*  wvfp-1974-black.*  wvfp-1974-white.*   # dated
+arched-wordmark/wvfp-word-color.*  -black.*  -white.*
+pill-lockup/wvfp-pill-color.*  -black.*  -white.*
 ```
 
-- **PNG** — everyday use (docs, slides, web, email)
+- **PNG** — everyday use, transparent (docs, slides, web, email)
 - **SVG** — sharpest at any size (web, large signage)
-- **PDF** — hand to a printer
+- **JPG** — a flat image for tools that require one
 - **AI / EPS** — editable source files for designers
 
-Use **full-color** on light/cream backgrounds and **white** on red, brown,
-dark, or photo backgrounds.
+Use **full-color** on light/cream backgrounds, **white** on red, brown, dark,
+or photo backgrounds, and **black** wherever a single-color mark is needed.
+(White PNGs are exported transparent from the master vector so they place
+cleanly on any background.)
 
 The raw export files the league provided were reviewed and consolidated into
 the structure above: exact duplicates and non-useful exports (e.g. white logos
